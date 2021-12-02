@@ -13,7 +13,10 @@
             "args": ["--auth",
                      "mogHR8VzTLwrn64cSbIhmoGWKftPTCxTIzjwlT7tF2YhGQ2NpJFxlM",
                      "--pdlid", "25212011521042"
-                     ]
+                     ],
+            "env": {
+                "PYTHONUNBUFFERED": "1"
+            }
         },
         {
             "name": "getdata.py no args",
@@ -30,6 +33,18 @@
             "program": "getdata.py",
             "console": "integratedTerminal",
             "args": ["--help"]
-        }
+        },
+        {
+            "name": "getdata.py very old",
+            "type": "python",
+            "request": "launch",
+            "program": "getdata.py",
+            "console": "integratedTerminal",
+            "args": ["--auth",
+                "mogHR8VzTLwrn64cSbIhmoGWKftPTCxTIzjwlT7tF2YhGQ2NpJFxlM",
+                "--pdlid", "25212011521042",
+                "--start-date", "2010-01-01"
+                ]
+   }
     ]
 }
